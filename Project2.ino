@@ -26,7 +26,7 @@ void loop() {
   AmpsRMS = ((VRMS * 1000)/mVperAmp)-0.3; //0.3 is the error I got for my sensor
  
   Serial.print(AmpsRMS);
-  Serial.print(" Amps RMS  ---  ");
+  Serial.print("Current:  ");
   Watt = (AmpsRMS*240/1.2);
   // note: 1.2 is my own empirically established calibration factor
   // as the voltage measured at D34 depends on the length of the OUT-to-D34 wire
